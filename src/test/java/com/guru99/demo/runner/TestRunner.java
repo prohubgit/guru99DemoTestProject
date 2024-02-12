@@ -10,8 +10,10 @@ import org.junit.runner.RunWith;
 
         features = {"src/test/java/com/guru99/demo/features"},
         glue = {"com/guru99/demo/hook", "com/guru99/demo/stepdefinitions"},
+        // i have removed "("de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber")"
         plugin = {"pretty", "json:target/report.json",
-                    "de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber"}
+                    }
+
        // tags     = "@smokeTest or "
 
 
